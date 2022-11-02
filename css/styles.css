@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+
+:root {
+  --font-style: "Nunito Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
+  font-family: var(--font-style);
+}
+
+.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 40px;
+  background-color: rgba(36, 32, 38, 0.6);
+  border-radius: 15px;
+}
+
+.login__title {
+  margin: 0 0 30px;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.login__input {
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  background: transparent;
+  outline: none;
+}
+
+.login__label {
+  position: relative;
+  left: 0;
+  top: -60px;
+  padding: 10px 0;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login__input:focus ~ .login__label,
+.login__input:valid ~ .login__label {
+  top: -88px;
+  left: 0;
+  font-size: 18px;
+}
+
+.login__button {
+  display: flex;
+  flex-direction: row;
+}
+
+.login__btn {
+  padding: 10px 20px;
+  color: rgb(107, 107, 131);
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.5s;
+  letter-spacing: 2px;
+  border: 1px solid rgb(107, 107, 131);
+  border-radius: 10px;
+  background-color: transparent;
+  margin: auto;
+  cursor: pointer;
+}
+
+.login__btn:hover,
+.login__btn:focus {
+  background-color: rgba(59, 141, 153, 0.4);
+  border: 1px solid transparent;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgb(59, 141, 153), 0 0 10px rgb(59, 141, 153),
+    0 0 10px rgb(59, 141, 153), 0 0 10px rgb(59, 141, 153);
+}
+
+.login__register {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+
+.login__link {
+  margin: auto;
+  color: rgb(59, 141, 153);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 1px solid rgb(59, 141, 153);
+}
