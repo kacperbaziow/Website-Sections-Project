@@ -19,6 +19,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
+  height: 440px;
   padding: 40px;
   background-color: rgba(36, 32, 38, 0.6);
   border-radius: 15px;
@@ -62,13 +63,14 @@ body {
   font-size: 18px;
 }
 
-.login__button {
+.login__button-box {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .login__btn {
-  padding: 10px 20px;
+  padding: 10px 40px;
   color: rgb(107, 107, 131);
   font-size: 16px;
   font-weight: bold;
@@ -93,19 +95,25 @@ body {
     0 0 10px rgb(59, 141, 153), 0 0 10px rgb(59, 141, 153);
 }
 
-.login__register {
+.login__sign-up {
   margin: auto;
   width: 60%;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   color: rgb(255, 255, 255);
 }
 
 .login__link {
   margin: auto;
-  color: rgb(59, 141, 153);
+  color: rgb(107, 107, 131);
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+  transition: .5s;
+}
+
+.login__link:hover,
+.login__link:focus {
+  color: rgb(59, 141, 153);
   border-bottom: 1px solid rgb(59, 141, 153);
 }
